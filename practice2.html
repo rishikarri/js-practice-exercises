@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+		var students = []; //an empty array
+		var student = {}; //an object with no properties
+
+		console.log(student.name);
+		
+		student.name = "Casey"; 
+		student.age = 24;
+		student.gender = "Male";
+		console.log(student.name);
+
+		var student2 = {
+			name: "Anna",
+			gender: "Female",
+			favoriteLanguage: "JS"
+		}
+
+		console.log(student2);
+
+		var student3 = {
+			name: "Andy",
+			languages: [
+			"Javascript", 
+			"Python", 
+			"English"
+			],
+			skillLevel: {
+				javascript: "Excellent",
+				python: "Beginner",
+				node: "Warrior",
+				goLanh: "Novice"
+			},
+
+			rightHanded: true,
+			sayHello: function() {
+				alert("Hello " + this.name);
+			}
+		}
+
+		console.log(student3.languages[2]);
+
+		students.push(student, student2, student3);
+
+		for (var i = 0; i < students.length; i++){
+			console.log(students[i]);
+		}
+		console.log(students);
+
+		</script>
+	</body>
+</html>

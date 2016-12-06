@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+		
+		// Take the class as an array, and generate 8 pairs at random
+
+		var students = ['Sean', 'Drew', 'Daniel', 'Kyle', 'Rishi', 'Liz', 'Anna', 'Ryan', 'Micahel', 'Casey', 'Sarah', 'Amber', 'Connie', 'Paul', 'Andy', 'Mason'];
+
+		// empty array that we will fill with pairs
+		var pairedStudents = [];
+
+		// generate two random numbers and make sure they are the same one
+		// DO not add one becasue you want the numbers to be between 0 and 15
+		var randomNumber1 = Math.floor((Math.random() * students.length));
+		var randomNumber2 = Math.floor((Math.random() * students.length));
+
+		console.log(randomNumber1, randomNumber2);
+
+		while (randomNumber1 === randomNumber2) {
+			console.log(randomNumber1, randomNumber2)
+			randomNumber1 = Math.floor((Math.random() * students.length));
+			randomNumber2 = Math.floor((Math.random() * students.length));			
+		}
+		console.log(randomNumber1, randomNumber2)
+
+		//it works!
+
+
+
+
+		// while (students.length > 0) {
+
+		// }
+
+		</script>
+	</body>
+</html>
